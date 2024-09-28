@@ -1,12 +1,19 @@
+import { useEffect } from 'react'
+
+import logo from './navbar-logo-light.png'
+
 import './App.css'
 import './button.scss'
-import logo from './navbar-logo-light.png'
 
 const App = () => {
   function handleClick() {
     // Do something when the button is clicked
     console.log('Button clicked!')
   }
+
+  useEffect(() => {
+    console.log('Component mounted')
+  }, [])
 
   return (
     <div className="content">
